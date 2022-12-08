@@ -2,7 +2,7 @@
 
 ## What
 
-A Ruby app built with [Sinatra](https://sinatrarb.com/) for digital nomads to get suggestions for cities they'd be comfortable moving to given how much they earn. This is a companion app to the blog post "How to build a Ruby app with Sinatra".
+A Ruby app built with [Sinatra](https://sinatrarb.com/) for digital nomads to input their salary information, plus a city and country they would like to move to, and the app will let them know if they will be able to afford living there. This is a companion app to the blog post "How to build a Ruby app with Sinatra".
 
 ## Why?
 
