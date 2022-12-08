@@ -14,6 +14,7 @@ gem 'faraday'
 group :development do 
 	gem 'sqlite3'
 	gem 'tux' # gives you access to an interactive console similar to 'rails console'
+	gem 'dotenv'
 end
 
 group :production do 

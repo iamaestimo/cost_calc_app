@@ -27,14 +27,17 @@ module LivingCostCalc
           require model
         end
 
+        # root route
         get '/'  do 
             erb :index
         end
 
+        # start here (where the user enters their info)
         get '/start' do 
             erb :start
         end
 
+        # results
         get '/results' do
             city = params[:city]
             country = params[:country]
@@ -48,8 +51,8 @@ module LivingCostCalc
             conn = Faraday.new(
                 url: url,
                 headers: {
-                    'X-RapidAPI-Key' => '52a3a4490bmshac37ccdf458e04bp1ce661jsn996259ac3268',
-                    'X-RapidAPI-Host' => 'cost-of-living-prices-by-city-country.p.rapidapi.com'
+                    'X-RapidAPI-Key' => ENV['RapidAPIKey'],
+                    'X-RapidAPI-Host' => ENV['RapidAPIHost']
                 }
               )
 

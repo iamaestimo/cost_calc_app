@@ -14,6 +14,7 @@ GEM
     bond (0.5.1)
     concurrent-ruby (1.1.10)
     daemons (1.4.1)
+    dotenv (2.8.1)
     eventmachine (1.2.7)
     faraday (2.7.1)
       faraday-net_http (>= 2.0, < 3.1)
@@ -74,6 +75,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  dotenv
   faraday
   pg
   rake
