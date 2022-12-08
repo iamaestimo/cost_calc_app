@@ -6,8 +6,10 @@ ruby "3.0.4"
 gem 'sinatra'
 gem 'activerecord'
 gem 'sinatra-activerecord'
+gem 'sinatra-contrib'
 gem 'thin'
 gem 'rake'
+gem 'faraday'
 
 group :development do 
 	gem 'sqlite3'

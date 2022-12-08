@@ -15,9 +15,14 @@ GEM
     concurrent-ruby (1.1.10)
     daemons (1.4.1)
     eventmachine (1.2.7)
+    faraday (2.7.1)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     minitest (5.16.3)
+    multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     pg (1.4.5)
@@ -44,6 +49,12 @@ GEM
     sinatra-activerecord (2.0.26)
       activerecord (>= 4.1)
       sinatra (>= 1.0)
+    sinatra-contrib (3.0.4)
+      multi_json
+      mustermann (~> 3.0)
+      rack-protection (= 3.0.4)
+      sinatra (= 3.0.4)
+      tilt (~> 2.0)
     sqlite3 (1.5.4-x86_64-linux)
     thin (1.8.1)
       daemons (~> 1.0, >= 1.0.9)
@@ -63,10 +74,12 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  faraday
   pg
   rake
   sinatra
   sinatra-activerecord
+  sinatra-contrib
   sqlite3
   thin
   tux
